@@ -1,0 +1,353 @@
+/* fonts adding ========= */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+/* color all ============================================== */
+
+/* Primary ===== */
+
+:root{
+
+    --Bright_Blue: hsl(220, 98%, 61%);
+    --Check_Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+}
+
+
+
+ /* Light Theme ====== */
+
+ :root{
+
+     --Very_Light_Gray: hsl(0, 0%, 98%);
+     --Very_Light_Grayish_Blue: hsl(236, 33%, 92%);
+     --Light_Grayish_Blue: hsl(233, 11%, 84%);
+     --Dark_Grayish_Blue: hsl(236, 9%, 61%);
+     --Very_Dark_Grayish_Blue: hsl(235, 19%, 35%);
+ }
+
+
+
+
+ :root{
+    --dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+ }
+/*  Dark Theme ====== */
+
+:root{
+
+    --Very_Dark_Blue: hsl(235, 21%, 11%);
+    --Very_Dark_Desaturated_Blue: hsl(235, 24%, 19%);
+    --Light_Grayish_Blue: hsl(234, 39%, 85%);
+    --Light_Grayish_Blue_hover: hsl(236, 33%, 92%);
+    --Dark_Grayish_Blue: hsl(234, 11%, 52%);
+    --Very_Dark_Grayish_Blue: hsl(233, 14%, 35%);
+    --Very_Dark_Grayish_Blue: hsl(237, 14%, 26%);
+
+}    
+
+
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* resat all ============= */
+
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    position : relative;
+    background-color: var(--Very_Light_Gray);
+    transition: all .3s ease;
+
+}
+
+
+/* Start Code  */
+
+.todo{
+    background-image: url(./images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    transition: all .3s ease;
+}
+
+
+.container{
+    width: 500px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Very_Light_Gray);
+   
+}
+
+
+.header h3 {
+    font-size: 2rem;
+   
+}
+
+.header i.fas{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+form.create_new_task_input {
+    width: 100%;
+    background: white;
+    height: 40px;
+    border-radius: 6px;
+    padding: 5px 20px 5px 35px;
+    margin: 40px 0;
+    display: flex;
+}
+form.create_new_task_input i{
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 1.5rem;
+  padding: 0 5px;
+  color: #FF7676;
+}
+.add_todo_input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Very_Dark_Grayish_Blue);
+}
+
+ul.todo_list li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.555);
+}
+
+input{
+    background: transparent
+}
+.content_li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content_li input{
+    width: 100%;
+
+}
+.craud_oparation {
+    display: flex;
+    flex: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.craud_oparation small {
+    font-size: 1rem;
+    color: var(--dark);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.craud_oparation small:hover {
+    color: var(--pink);
+}
+
+.li_text_input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--darker);
+   
+    
+}
+button {
+    border: none;
+    background: none;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+    
+}
+
+.edit{
+
+  color: var(--pink);
+}
+.delete{
+  color: var(--purple);
+  
+}
+.edit:hover,
+.delete:hover{
+    opacity: .7;
+}
+
+ul.todo_list li .close{
+    color: var(--Very_Dark_Grayish_Blue);
+    opacity: .5;
+    cursor: pointer;
+}
+
+label {
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid var(--Dark_Grayish_Blue);
+    
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    background-image: url(./images/check-solid.svg);
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+   display: none;
+    
+}
+
+#okay{
+    display: none;
+    
+ }
+ .btn_grop{
+     display: flex;
+ }
+ .btn_grop button{
+     margin: 0 10px;
+ }
+#okay:checked ~ label{
+   border: 1px solid transparent;
+   background-color: hsl(280, 87%, 65%);
+}
+#okay:checked ~ ::after{
+    display: block;
+}
+.our_tudo{
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #34304425;
+    position : relative
+}
+
+.li_text_input:not(:read-only){
+    color: var(--pink);
+}
+
+/* dark Mode  */
+
+body.dark{
+    background : var(--Very_Dark_Blue);
+}
+
+body.dark .todo{
+    background-image: url(./images/bg-desktop-dark.jpg);
+}
+body.dark .our_tudo{
+    background-color: var(--Very_Dark_Desaturated_Blue);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.212);
+}
+body.dark .li_text_input{
+   color: var(--Light_Grayish_Blue);
+}
+body.dark .li_text_input:not(:read-only){
+   color: var(--purple);
+}
+body.dark .craud_oparation small{   
+        color: var(--light);   
+}
+body.dark .craud_oparation small:hover{
+    color: var(--pink);
+}
+body.dark .create_new_task_input{   
+    background-color: var(--Very_Dark_Desaturated_Blue);  
+}
+body.dark .create_new_task_input .add_todo_input{   
+    color: var(--Light_Grayish_Blue);
+}
+body.dark .all_active_complite{   
+    background-color: var(--Very_Dark_Desaturated_Blue);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.212);
+
+
+}
+
+/* responsive Code ============= */
+
+
+@media (max-width : 517px){
+    .todo{
+        height: 260px;
+    }
+    .container{
+        width: 350px;
+        margin: auto;
+        padding-top: 40px;
+    }
+    .li_text_input{
+        font-size: .8rem;
+    }
+    .add_todo_input{
+        font-size: 1rem;
+    }
+    .add_todo_input::placeholder{
+        font-size: .8rem;
+    }
+
+    .header h3{
+        font-size: 1rem;
+    }
+    .all_active_complite{
+        text-align : center ;
+        position: absolute;
+        padding : 10px;
+        bottom: -50px;
+        left: 0px;
+        width: 100%;
+        background: white;
+        box-shadow: 10px 10px 15px gainsboro;
+    }
+    .all_active_complite small{
+        margin: 0 15px ;
+    }
+ 
+}
