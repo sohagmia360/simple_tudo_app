@@ -71,7 +71,7 @@ html{
 body{
     font-size: 18px;
     position : relative;
-    background-color: var(--Very_Light_Gray);
+    background-color: #C8E1ED;
     transition: all .3s ease;
 
 }
@@ -276,7 +276,9 @@ label::after{
 /* dark Mode  */
 
 body.dark{
-    background : var(--Very_Dark_Blue);
+    background-image: linear-gradient(#173C56 , #13161D) !important;
+    height: 100vh;
+
 }
 
 body.dark .todo{
