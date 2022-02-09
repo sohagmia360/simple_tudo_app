@@ -8,6 +8,7 @@ const addTask = document.querySelector('.addtudobtn')
 const editBtn = document.querySelector('.edit')
 const form  = document.querySelector('.create_new_task_input')
 const counter = document.querySelector('.craud_oparation small span')
+const removeAllTask = document.querySelector('#removeAllTask')
 let count = 0
 
 
@@ -49,8 +50,6 @@ function addtudos(e){
         counter.innerHTML = count
     }
 }
-
-
 
 
 
@@ -108,5 +107,14 @@ function getelement(listValue){
 
     })
 }
+
+removeAllTask.addEventListener('click', function(){
+    document.querySelector('.todo_list').innerHTML = ''
+    console.log('this count' + count)
+    count = 0
+    counter.innerHTML = 0
+})
+
+
 
 
